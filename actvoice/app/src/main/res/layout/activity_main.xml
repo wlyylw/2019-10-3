@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/first_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" >
+        <ImageButton
+            android:src="@drawable/ic_yellowstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start"
+            tools:ignore="MissingConstraints"
+            android:text="开始录音"/>
+        <ImageButton
+            android:text="停止录音"
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:src="@drawable/ic_yellowstop"/>
+        <jaygoo.widget.wlv.WaveLineView
+            android:id="@+id/waveLineView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:wlvBackgroundColor="@android:color/white"
+            app:wlvMoveSpeed="290"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_line"
+        android:layout_below="@id/first_line"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_play"
+            tools:ignore="MissingConstraints"
+            android:text="开始播放"
+            android:src="@drawable/ic_bluestart"/>
+        <ImageButton
+            android:text="停止播放"
+            android:id="@+id/stop_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:src="@drawable/ic_bluestop"/>
+    </LinearLayout>
+
+</RelativeLayout>
