@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+<!--dname:db name-->
+    <dbname value="BookStore" />
+<!--value: db版本号-->
+    <version value="2" />
+    <list>
+<!--        表名-->
+        <mapping class="com.example.litepal.book"></mapping>
+        <mapping class="com.example.litepal.Category"></mapping>
+    </list>
+
+
+</litepal>
