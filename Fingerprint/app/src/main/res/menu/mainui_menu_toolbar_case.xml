@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/mainui_case_build"
+        android:title="新建案件"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_mainui_case_add"/>
+    <item
+        android:id="@+id/mainui_case_watch"
+        android:title="查看案件"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_mainui_case_watch"
+        ></item>
+    <item
+        android:id="@+id/mainui_case_send"
+        android:title="发送查询"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_mainui_case_send"
+        ></item>
+</menu>

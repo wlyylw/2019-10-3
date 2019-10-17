@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".otheractivity.LoginActivity">
+    <LinearLayout
+        android:paddingTop="@dimen/bottom_navigation_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:src="@drawable/fingerlogin"
+            android:layout_marginTop="36dp"/>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="欢迎登录"-->
+<!--            android:textSize="28sp"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_margin="8dp"/>-->
+        <LinearLayout
+            android:id="@+id/testLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_shape"
+            android:orientation="horizontal"
+            android:columnCount="3"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/userNameTextView"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"
+
+                android:text="用户"
+                android:layout_marginLeft="8dp" />
+            <EditText
+                android:id="@+id/userNameEditText"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:background="@null"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+
+                android:hint="用户名/密码/手机号码" />
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_loginuser"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_shape"
+            android:orientation="horizontal"
+            android:columnCount="3"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/passwordTextView"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"
+
+                android:text="密码"
+                android:layout_marginLeft="8dp" />
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:background="@null"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+
+                android:inputType="textPassword"/>
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_userpass"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_round_shape"
+            android:layout_margin="24dp"
+            android:text="登录"
+            android:textColor="@android:color/white"
+            android:onClick="On_LoginButton_Click"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

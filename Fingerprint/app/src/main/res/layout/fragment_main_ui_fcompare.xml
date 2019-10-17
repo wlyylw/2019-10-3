@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/mainui_toolbar_compare"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:contentInsetStartWithNavigation="0dp"
+                app:titleTextColor="@color/white">
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/mainui_compare_find_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainui_toolbar_compare"
+                android:layout_centerHorizontal="true">
+
+                <SearchView
+                    android:id="@+id/compare_find_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="查找信息"></SearchView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainui_compare_find_information"
+                android:id="@+id/compare_first_line"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text="发送时间:"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:checked="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最近三天"
+                            android:id="@+id/compare_three_day_send"/>
+
+                        <RadioButton
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最近一周"
+                            android:id="@+id/compare_week_send"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最近一个月"
+                            android:id="@+id/compare_month_send"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text="案件时间:"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:checked="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最近三天"
+                            android:id="@+id/compare_three_day_case"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最近一周"
+                            android:id="@+id/compare_week_case"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最近一个月"
+                            android:id="@+id/compare_month_case"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text="状态:"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:checked="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未返回"
+                            android:id="@+id/compare_status_unback"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已返回"
+                            android:id="@+id/compare_status_back"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已确认"
+                            android:id="@+id/compare_status_confirm"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+            <!--android:paddingTop="@android:dimen/app_icon_size"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/mainui_compare_second_line"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_below="@+id/mainui_compare_find_information"-->
+            <!--android:layout_alignLeft="@+id/mainui_compare_find_information">-->
+            <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="发送时间" />-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="时间"/>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/send_time_Second"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_below="@+id/mainui_compare_second_line"-->
+            <!--android:layout_alignLeft="@id/mainui_compare_find_information">-->
+            <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="案件时间" />-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="时间"/>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/mainui_compare_third_line"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_below="@+id/send_time_Second"-->
+            <!--android:layout_alignLeft="@id/mainui_compare_find_information">-->
+            <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="状态" />-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="状态"/>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/mainui_compare_third_line"-->
+            <!--android:paddingTop="@android:dimen/notification_large_icon_height"-->
+            <!--android:id="@+id/mainui_compare_fourth_line">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="2019年8月1日"-->
+            <!--android:id="@+id/compare_show_date"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/mainui_compare_fourth_line"-->
+            <!--android:id="@+id/mainui_compare_fifth_line">-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1">-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="序号"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1">-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="案件名称"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1">-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="指纹"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1">-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="发送时间"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1">-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="返回时间"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1">-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="认定人"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1">-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="确认"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1">-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

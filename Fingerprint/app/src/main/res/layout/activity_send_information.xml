@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".otheractivity.SendInformation"
+    android:orientation="vertical"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/otheractivity_toolbar_send_information"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:titleTextColor="@color/white"
+                app:navigationIcon="@drawable/ic_back_black"
+                app:contentInsetStartWithNavigation="0dp"
+                android:theme="@style/Theme.ToolBar.Menu"
+                >
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout
+                android:layout_below="@id/otheractivity_toolbar_send_information"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/otheractivity_send_information_first_line"
+               >
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_group">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/not"
+                android:text="不需要认定"
+                android:checked="true"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/standard"
+                android:text="标准认定(1小时反馈)"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/urgent"
+                android:text="加急认定(30分钟反馈)"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/extra_urgent"
+                android:text="特急认定(10分钟反馈)"/>
+        </RadioGroup>
+    </LinearLayout>
+
+            <LinearLayout
+        android:paddingTop="@android:dimen/app_icon_size"
+        android:layout_below="@id/otheractivity_send_information_first_line"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/otheractivity_send_information_second_line"
+        android:orientation="horizontal"
+        android:layout_alignLeft="@+id/otheractivity_send_information_first_line"
+        >
+
+        <CheckBox
+            android:id="@+id/checkbox_hope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignTop="@+id/otheractivity_send_information_second_line"
+            android:layout_weight="1"
+            android:text="我希望" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/people"></Spinner>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来认定"/>
+    </LinearLayout>
+
+            <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otheractivity_send_information_second_line"
+        android:layout_alignLeft="@+id/otheractivity_send_information_first_line"
+        android:paddingTop="@android:dimen/app_icon_size"
+        android:id="@+id/otheractivity_send_information_third_line">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="盯住"
+
+            />
+    </LinearLayout>
+
+            <LinearLayout
+
+        android:id="@+id/otheractivity_send_information_fourth_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otheractivity_send_information_third_line"
+        android:layout_alignRight="@+id/otheractivity_send_information_first_line"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每月对比一次"
+                android:checked="true"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每周对比一次" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每季度对比一次" />
+        </RadioGroup>
+    </LinearLayout>
+
+            <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/otheractivity_send_information_fifth_line"
+        android:layout_below="@id/otheractivity_send_information_fourth_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@android:dimen/app_icon_size"
+
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送出去"/>
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
