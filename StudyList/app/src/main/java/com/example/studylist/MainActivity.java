@@ -11,18 +11,15 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
+    MinePageService minePageService;
     private List<MinePageInformation> list = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MinePageInformation minePageInformation1 = new MinePageInformation("Title1","Infoimation1");
-        MinePageInformation minePageInformation2 = new MinePageInformation("Title2","Infoimation2");
-        MinePageInformation minePageInformation3 = new MinePageInformation("Title3","Infoimation3");
-        list.add(minePageInformation1);
-        list.add(minePageInformation2);
-        list.add(minePageInformation3);
-        recyclerView = findViewById(R.id.recycler_view);
+        minePageService = MinePageService.getInstance();
+        list = minePageService.getMineService();
+        recyclerView = findViewById(R.id.recycler_view_three);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         MinePageAdapter adapter = new MinePageAdapter(list);

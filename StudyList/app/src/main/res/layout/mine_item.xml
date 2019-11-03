@@ -4,51 +4,402 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="2dp"
-        android:background="@drawable/white_round_shape"
-        android:elevation="12dp"
-        android:divider="@android:color/darker_gray"
-        android:showDividers="middle"
-        android:orientation="vertical"
-        android:paddingHorizontal="12dp"
-        >
+
+<!--            android:elevation="12dp"-->
+
         <LinearLayout
+            android:id="@+id/mine_item_line3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/white_round_shape"
+
+            android:padding="12dp"
+            android:divider="@android:color/darker_gray"
+            android:showDividers="middle"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp"
+            >
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="title1"
-                android:textSize="20dp"
-                android:id="@+id/title1"/>
-            <TextView
+                >
+
+                <TextView
+                    android:id="@+id/mine_line3_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:paddingTop="5dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:id="@+id/mine_line3_inforamtion1"
+                        android:paddingTop="5dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="information1"
-                android:id="@+id/information1"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:id="@+id/mine_line3_title2"
+                    android:textSize="20dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#000000"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:id="@+id/mine_line3_inforamtion2"
+                        android:paddingTop="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="title1"
-                android:id="@+id/title2"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="information1"
-                android:id="@+id/information2"/>
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:id="@+id/mine_line3_title3"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:paddingTop="13dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:id="@+id/mine_line3_inforamtion3"
+                        android:paddingTop="13dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
 
-</LinearLayout>
+        <LinearLayout
+            android:padding="12dp"
+            android:id="@+id/mine_item_line5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/white_round_shape"
+
+            android:divider="@android:color/darker_gray"
+            android:showDividers="middle"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:id="@+id/mine_line5_title1"
+                    android:paddingTop="5dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:id="@+id/mine_line5_information1"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:id="@+id/mine_line5_title2"
+                    android:paddingTop="5dp"
+                    android:textColor="#000000"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:id="@+id/mine_line5_information2"
+                        android:paddingTop="5dp"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:id="@+id/mine_line5_title3"
+                    android:textColor="#000000"
+                    android:paddingTop="5dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:id="@+id/mine_line5_information3"
+                        android:paddingTop="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:id="@+id/mine_line5_title4"
+                    android:textColor="#000000"
+                    android:paddingTop="5dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:id="@+id/mine_line5_information4"
+                        android:paddingTop="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:id="@+id/mine_line5_title5"
+                    android:textColor="#000000"
+                    android:paddingTop="13dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:id="@+id/mine_line5_information5"
+                        android:paddingTop="13dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:padding="12dp"
+            android:id="@+id/mine_item_line4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/white_round_shape"
+
+            android:divider="@android:color/darker_gray"
+            android:showDividers="middle"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:id="@+id/mine_line4_title1"
+                    android:textColor="#000000"
+                    android:paddingTop="5dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:id="@+id/mine_line4_information1"
+                        android:paddingTop="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:id="@+id/mine_line4_title2"
+                    android:textColor="#000000"
+                    android:paddingTop="5dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:id="@+id/mine_line4_information2"
+                        android:paddingTop="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:id="@+id/mine_line4_title3"
+                    android:textColor="#000000"
+                    android:paddingTop="5dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    >
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:id="@+id/mine_line4_information3"
+                        android:paddingTop="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:id="@+id/mine_line4_title4"
+                    android:textColor="#000000"
+                    android:paddingTop="13dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:id="@+id/mine_line4_information4"
+                        android:paddingTop="13dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
 
 </LinearLayout>
