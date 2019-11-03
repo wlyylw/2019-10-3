@@ -3,9 +3,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@drawable/recycler_touch_bg"
     >
 
-<!--            android:elevation="12dp"-->
+<!--android:elevation="12dp"-->
 
         <LinearLayout
             android:id="@+id/mine_item_line3"
