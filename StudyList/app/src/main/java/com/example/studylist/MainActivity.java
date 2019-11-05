@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Information
-        minePageService = MinePageService.getInstance();
-        list = minePageService.getMineService();
-        recyclerView = findViewById(R.id.recycler_view_three);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
-        MinePageAdapter adapter = new MinePageAdapter(list);
-        recyclerView.setAdapter(adapter);
+//        //Information
+//        minePageService = MinePageService.getInstance();
+//        list = minePageService.getMineService();
+//        recyclerView = findViewById(R.id.recycler_view_three);
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+//        recyclerView.setLayoutManager(layoutManager);
+//        MinePageAdapter adapter = new MinePageAdapter(list);
+//        recyclerView.setAdapter(adapter);
 
         //Dynamic
         minePageDynamicService = MinePageDynamicService.getInstance();
